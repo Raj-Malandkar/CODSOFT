@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d0eaff;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+.dark-mode header {
+    background-color: #111;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+.dark-mode section {
+    background-color: #333;
+}
+h1, h2, h3 {
+    color: #008cba;
+    font-weight: bold;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #4bb3fd;
+}
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+#skills li {
+    background: #008cba;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}

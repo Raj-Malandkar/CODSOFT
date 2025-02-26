@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0eaff;
+            color: #333;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #222;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .dark-mode header {
+            background-color: #111;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        .dark-mode section {
+            background-color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #008cba;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #008cba;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #008cba;
+            font-weight: bold;
+        }
+        .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+            color: #4bb3fd;
+        }
+        #dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #skills li {
+            background: #008cba;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <button id="dark-mode-toggle">Dark Mode</button>
+    <header>
+        <h1>Raj Malandkar</h1>
+        <p>Learning and Growing, One Code at a Time</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate engineering student specializing in Computer Science at Bharati Vidyapeeth College of Engineering. Skilled in web development and programming, I have experience with HTML, CSS, JavaScript, Java, Python, SQL, and Data Structures & Algorithms.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java, OOPs, Python Basics</li>
+            <li>Data Structures and Algorithms, SQL Basics</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>Developed a responsive personal portfolio website to showcase my projects, skills, and professional achievements, utilizing HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>To-Do List Application</h3>
+            <p>Developed a comprehensive to-do list application to manage daily tasks efficiently and enhance productivity. Users can mark tasks as completed, set reminders, and view their tasks through an intuitive, user-friendly interface.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+        <div class="project">
+            <h3>Simple Chatbot</h3>
+            <p>Created an interactive chatbot designed to answer a set of questions and simulate dynamic user interaction. The chatbot leverages natural language processing to provide relevant responses, enhancing user engagement and experience.</p>
+            <p><strong>Technologies Used:</strong> Python, NLTK (Natural Language Toolkit)</p>
+        </div>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>Built a mobile app that fetches and displays weather information for a given location.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, OpenWeatherMap API</p>
+        </div>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <br><a href="resume.pdf" download>Download My Resume</a>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: rajmalandkar04@gmail.com</p>
+        <p>Phone: +91 987 0328256</p>
+        <p>GitHub: <a href='https://github.com/Raj-Malandkar'>github.com/Raj-Malandkar</a></p>
+        <p>LinkedIn: <a href='https://www.linkedin.com/in/rajmalandkar'>linkedin.com/in/rajmalandkar</a></p>
+    </section>
+    
+    <script>
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                darkModeToggle.textContent = "Light Mode";
+            } else {
+                darkModeToggle.textContent = "Dark Mode";
+            }
+        });
+    </script>
+</body>
+</html>
